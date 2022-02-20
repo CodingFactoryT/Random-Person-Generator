@@ -713,7 +713,6 @@ public enum StreetNames{
 	Piedmont,
 	Piers,
 	Pitcarnie,
-	P,
 	Plantation,
 	Platts,
 	Plymouth,
