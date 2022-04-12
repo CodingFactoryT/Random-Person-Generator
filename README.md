@@ -12,4 +12,6 @@ Generates random persons with the following attributes:
   <li>Job</li>
   <li>Address</li>
   <li>City</li>      
-</ul>
+</ul> <br>
+The Random Person Generator was developed in order to get data for testing SQL-databases. <br>
+But of course, you can use it for whatever you want
