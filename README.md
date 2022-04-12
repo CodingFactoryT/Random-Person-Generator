@@ -1,5 +1,5 @@
 # Random-Person-Generator
-Generates random persons with the following attributes:
+Generates random, imaginary persons with the following attributes:
 <ul>
   <li>Gender</li>
   <li>Name</li>
