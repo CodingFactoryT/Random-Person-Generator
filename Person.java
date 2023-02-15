@@ -29,4 +29,34 @@ public class Person {
 		this.address = rg.getRandAddress();
 		this.city = rg.getRandCity();
 	}
+
+	@Override
+	public String toString(){
+		return "Gender:\t\t" + this.gender +
+		"\nName:\t\t" + this.firstName + " " + this.lastName +
+		"\nBirth Date:\t" + this.birthDate +
+		"\nEye Color:\t" + this.eyeColor +
+		"\nHair Color:\t" + this.hairColor +
+		"\nNationality:\t" + this.nationality +
+		"\nEmail-Address:\t" + this.emailAddress +
+		"\nTel. Number:\t" + this.telephoneNumber +
+		"\nJob:\t\t" + this.job +
+		"\nAddress:\t" + this.address +
+		"\nCity:\t\t" + this.city;
+	}
+
+	public String getAsCSV(){
+		return this.gender +
+				"," + this.firstName +
+				"," + this.lastName +
+				"," + this.birthDate +
+				"," + this.eyeColor +
+				"," + this.hairColor +
+				"," + this.nationality +
+				"," + this.emailAddress +
+				"," + this.telephoneNumber +
+				"," + this.job +
+				"," + this.address +
+				"," + this.city + ";";
+	}
 }
