@@ -105,5 +105,13 @@ public class RandomGenerator {
 	public String getRandCity() {
 		return randStringOf(Cities.values()).toString();
 	}
-	
+
+    public String getRandCompanyName() {
+		return randStringOf(Companies.values()).toString();
+    }
+
+	public String getRandSalary() {
+		int salary = random.nextInt(25000, 100000);
+		return String.valueOf(salary);
+	}
 }

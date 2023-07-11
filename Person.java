@@ -12,6 +12,8 @@ public class Person {
 	String job = null;
 	String address = null;
 	String city = null;
+	String companyName = null;
+	String salary = null;
 	
 	Person(){
 		RandomGenerator rg = new RandomGenerator();
@@ -28,21 +30,25 @@ public class Person {
 		this.job = rg.getRandJob();
 		this.address = rg.getRandAddress();
 		this.city = rg.getRandCity();
+		this.companyName = rg.getRandCompanyName();
+		this.salary = rg.getRandSalary();
 	}
 
 	@Override
 	public String toString(){
-		return "Gender:\t\t" + this.gender +
-		"\nName:\t\t" + this.firstName + " " + this.lastName +
-		"\nBirth Date:\t" + this.birthDate +
-		"\nEye Color:\t" + this.eyeColor +
-		"\nHair Color:\t" + this.hairColor +
+		return "Gender:\t\t\t" + this.gender +
+		"\nName:\t\t\t" + this.firstName + " " + this.lastName +
+		"\nBirth Date:\t\t" + this.birthDate +
+		"\nEye Color:\t\t" + this.eyeColor +
+		"\nHair Color:\t\t" + this.hairColor +
 		"\nNationality:\t" + this.nationality +
 		"\nEmail-Address:\t" + this.emailAddress +
 		"\nTel. Number:\t" + this.telephoneNumber +
-		"\nJob:\t\t" + this.job +
-		"\nAddress:\t" + this.address +
-		"\nCity:\t\t" + this.city;
+		"\nJob:\t\t\t" + this.job +
+		"\nAddress:\t\t" + this.address +
+		"\nCity:\t\t\t" + this.city +
+		"\nCompany Name:\t" + this.companyName +
+		"\nSalary:\t\t\t" + this.salary + "\n";
 	}
 
 	public String getAsCSV(){
@@ -57,6 +63,8 @@ public class Person {
 				"," + this.telephoneNumber +
 				"," + this.job +
 				"," + this.address +
-				"," + this.city + ";";
+				"," + this.city +
+				"," + this.companyName +
+				"," + this.salary +";";
 	}
 }
